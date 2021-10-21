@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+    <title>arbstore</title>
+</head>
+<body>
+   
+
+    <div class="container">
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__body">
+                        <a href="#" class="header__logo">
+                            <img src="/arbstore/img/logo.svg" alt="">
+                            <span>ArbStore</span>
+                        </a>  
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <nav class="header__menu" >
+                            <ul class="header__list ">
+                                <li><a  class="header__link" target="blank" href="/arbiters.html">List of Arbiters</a></li>
+                                <li><a class="header__link"  target="blank" href="/userguide.html">User Guide</a></li>
+                                <li> <a class="header__link" target="blank" href="/arbiterguide.html">Arbiters Guide</a></li>
+                                <li><a class="header__link"  target="blank" href="#">Developer Docs</a></li>
+                            </ul>
+                            <button class="menu_item__button adp_button">Sign Up</button>
+                        </nav>
+                        <button class="menu_item__button adp2_button">Sign Up</button>
+                    </div>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="elipse-gause"></div>
+                <div class="elipse-gause2"></div>
+                <div class="block-foto">
+                    <img src="/img/FotoNone.svg" alt="" srcset="">
+                    <p>Change profile image</p>
+                </div>
+                    <div class="form_container">
+                        <div class="form_data">
+                            <form action="#" method="post">
+                                <div class="form_item">
+                                    <label for="formvisible" class="form_label form_label__visible ">Visible</label>
+
+                                    <input id="formvisible" type="checkbox" name="visible" class="form_input_req_visible">
+                                </div>  
+
+                                <div class="form_item">
+                                    <label for="formname" class="form_label">Real Name</label>
+                                    <input id="formname" type="text" name="name" class="form_input_req_name">
+                                </div> 
+                                
+                                <div class="form_item">
+                                    <label for="formshortbio" class="form_label">Short Bio</label>
+                                    <input id="formshortbio" type="text" name="shortbio" class="form_input_req_shortbio">
+                                </div>
+
+                                <div class="form_item">
+                                    <label for="formfullbio" class="form_label">Full Bio</label>
+                                    <textarea id="formfullbio" name="fullbio"  class="form_input_req_fullbio" cols="30" rows="10"></textarea>
+                                </div>
+
+                                <div class="form_item">
+                                    <label for="formsphone" class="form_label">Contact info for moderators</label>
+                                    <input id="formsphone" type="text" name="phone" placeholder="+_(____)____-_____" class="form_input_req_phone">
+                                </div>
+
+                                <div class="form_item">
+                                    <label for="formspecialization" class="form_label ">Your specialization as an Arbiter</label>
+
+                                    <div class="formspecialization_data">
+                                        <div class="IT">
+                                            <input id="formspecializationit" type="checkbox" name="formspecializationit" class="form_input_req_formspecializationit">
+                                            <label for="formspecializationit">IT</label>
+                                        </div>
+                                        <input id="formspecializationit" type="text" name="specializationit" class="form_input_req_specializationit visible_input"> 
+
+                                        <div class="Insurance">
+                                            <input id="formspecializationInsurance" type="checkbox" name="formspecializationInsurance" class="form_input_req_formspecializationit">
+                                            <label for="formspecializationInsurance">Insurance</label>
+                                        </div>
+                                        <input id="formspecializationInsurance" type="text" name="specializationInsurance" class="form_input_req_specializationInsurance visible_input">
+                                        
+                                        <div class="Finance">
+                                            <input id="formspecializationFinance" type="checkbox" name="formspecializationFinance" class="form_input_req_formspecializationit">
+                                            <label for="formspecializationFinance">Finance</label>
+                                        </div>
+                                        <input id="formspecializationFinance" type="text" name="specializationFinance" class="form_input_req_specializationFinance visible_input">
+
+                                        <div class="Realestate">
+                                            <input id="formspecializationRealestate" type="checkbox" name="formspecializationRealestate" class="form_input_req_formspecializationRealestate">
+                                            <label for="formspecializationRealestate">Real estate</label>     
+                                        </div>
+                                        <input id="formspecializationRealestate" type="text" name="specializationRealestate" class="form_input_req_specializationRealestate visible_input">   
+                                                         
+                                    </div>    
+                                </div>  
+
+                                <div class="form_item">
+                                    <label for="formsphone" class="form_label">Languages that you speak</label>
+                                    <input id="formsphone" type="text" name="phone" placeholder="" class="form_input_req_phone">
+                                </div>
+                                
+                                <button class="formsbutton_submit" type="submit">submit</button>
+
+                            </form>
+                        </div>
+                    </div>
+                    
+                <div class="elipse-gause3"></div>
+
+            </section>
+
+            <footer class="footer">
+                <div class="social_items">
+                    <img src="/arbstore/img/Icons/etherscan.svg" alt="etherscan">
+                    <img src="/arbstore/img/Icons/Gihub.svg" alt="Gihub">
+                    <img src="/arbstore/img/Icons/Slack.svg" alt="Slack">
+                    <img src="/arbstore/img/Icons/Reddit.svg" alt="Reddit">
+                    <img src="/arbstore/img/Icons/Twitter.svg" alt="Twitter">
+                    <img src="/arbstore/img/Icons/Ghost Blog.svg" alt="Ghost Blog">
+                    <img src="/arbstore/img/Icons/Telegram.svg" alt="Telegram">
+                    <img src="/arbstore/img/Icons/Linkedin.svg" alt="Linkedin">
+                </div>
+            </footer>
+            
+            <!-- <div class="elipse_background">
+                <img src="/img/Ellipse.svg" alt="#">
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

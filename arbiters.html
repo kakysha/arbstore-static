@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+    <title>arbstore</title>
+</head>
+<body>
+    <!-- https://testnet.arbstore.org/api/v1/ API -->
+    <div class="overlay">   
+        <div class="popup_arbitier">
+            <div class="popup_exit">
+                <img src="/arbstore/img/modalexit.svg" alt="">
+            </div>
+            <div class="popup_container">
+                <div class="popup_arbitier__data">
+                    <img src="/arbstore/img/foto/Albert.svg" alt="" srcset="">
+                    <div class="popup_arbitier__name">
+                        <p>Albert Khayrullaev</p><br><br>
+                        <p>Chat name - light2</p>
+                    </div>                
+                </div>
+
+                <div class="popup_bio_adaptive">
+                    <p>BIO:</p>
+                    <p class="bio-desc">Cold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyerCold hearted lawyer</p>
+
+                </div>
+
+                <table class="popup_arbitier_table_data">
+                    <col style="width: 40%">
+                     <tr>
+                        <td>Languages:</td>
+                        <td>English – English</td>
+                    </tr>
+                    <tr>
+                        <td>Contracts resolved:</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Service fees by contract type:</td>
+                        <td>IT: 2-5% min $30 <br> Finance: 1-3% min $20</td>
+                    </tr>                    
+                    <tr>
+                        <td>Last activity:</td>
+                        <td>22 days ago</td>
+                    </tr>
+                    <tr>
+                        <td>Registered:</td>
+                        <td>4 months ago</td>
+                    </tr>
+
+                    <tr class="popup_address_block">
+                        <td>Address:</td>
+                        <!-- <td>EJC4A7WQGHEZEKW6RLO7F26SAR4LAQBU</td> -->
+                        <td > 
+                            <div class="popup_address_copy_block">
+                                <div class="popup_address_copy_block_text">
+                                    <p>EJC4A7WQGHEZEKW6RLO7F26SAR4LAQBU</p>
+                                </div>
+                                <button class="popup_address_copy_button">Copy</button>
+                            </div>
+                        </td>
+                    </tr>
+                
+                </table>   
+
+                <div class="popup_adaptive_address">
+                    <div><p>Address</p></div>
+                    <div class="popup_address_copy_block">
+                        <div class="popup_address_copy_block_text">
+                            <p>EJC4A7WQGHEZEKW6RLO7F26SAR4LAQBU</p>
+                        </div>
+                        <button class="popup_address_copy_button">Copy</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+            
+    </div>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <!-- <header class="header">
+                <div class="menu">
+                    <div class="menu_items">
+                        <div class="menu_item__logo">
+                            <img src="/arbstore/img/logo.svg" alt="LOGO" srcset="">
+                            
+                            <span>ArbStore</span> 
+                        </div>
+                        <nav class="menu_item__nav">
+                            <a class="active_page" href="#">List of Arbiters</a>
+                            <a href="#">User Guide</a>
+                            <a  href="#">Arbiters Guide</a>
+                            <a href="#">Developer Docs</a>
+                        </nav>
+                        <button class="menu_item__button">Sign Up</button>
+                    </div>
+                </div> 
+            </header> -->
+            <header class="header">
+                <div class="container">
+                    <div class="header__body">
+                        <a href="#" class="header__logo">
+                            <img src="/arbstore/img/logo.svg" alt="">
+                            <span>ArbStore</span>
+                        </a>  
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <nav class="header__menu" >
+                            <ul class="header__list ">
+                                <li><a  class="header__link" target="blank" href="/arbiters.html">List of Arbiters</a></li>
+                                <li><a class="header__link"  target="blank" href="/userguide.html">User Guide</a></li>
+                                <li> <a class="header__link" target="blank" href="/arbiterguide.html">Arbiters Guide</a></li>
+                                <li><a class="header__link" target="blank" href="#">Developer Docs</a></li>
+                            </ul>
+                            <button class="menu_item__button adp_button">Sign Up</button>
+                        </nav>
+                        <button class="menu_item__button adp2_button">Sign Up</button>
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="content">
+                <div class="elipse-gause"></div>
+                <div class="elipse-gause2"></div>
+                <div class="button_filter">
+                    <button class="it">it</button>
+                    <button class="finance">finance</button>
+                </div>
+                <div class="arbiter_items">
+
+                     <!-- <div class="arbiter_item">
+                        <div class="arbitier_item__personal">
+                            <div class="arbiter_item__foto">
+                                <img src="/arbstore/img/foto/Albert.svg" alt="Foto person" srcset="">
+                            </div>
+
+                            <table class="arbitier_item__personal_data">
+                                <tr>
+                                    <td>Name:</td>
+                                    <td>Albert Khayrullaev</td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                    <td>EJC4A7WQGHEZEKW6RLO7F26SAR4LAQBU</td>
+                                </tr>
+                                <tr>
+                                    <td>BIO:</td>
+                                    <td>Retired judge and musician</td>
+                                </tr>
+                                <tr>
+                                    <td>№ cases resolved / cases
+                                        <br> arbiter was picked</td>
+                                    <td>4/4</td>
+                                </tr>
+                                <tr>
+                                    <td>Last case resolved</td>
+                                    <td>4 months ago</td>
+                                </tr>
+                                <tr>
+                                    <td>Last Activity:</td>
+                                    <td>17 days ago</td>
+                                </tr>
+                                
+                            </table>
+
+                           
+                        </div>
+                        
+                        <button class="arbitier_item__button-info" id="1">View more</button>
+                    </div> -->
+
+
+                    <!-- <div class="arbiter_item">
+                        <div class="arbitier_item__personal">
+                            <div class="arbiter_item__foto">
+                                <img src="/arbstore/img/foto/Albert.svg" alt="Foto person" srcset="">
+                            </div>
+
+                            <table class="arbitier_item__personal_data">
+                                <tr>
+                                    <td>Name:</td>
+                                    <td>Albert Khayrullaev</td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                    <td>EJC4A7WQGHEZEKW6RLO7F26SAR4LAQBU</td>
+                                </tr>
+                                <tr>
+                                    <td>BIO:</td>
+                                    <td>Retired judge and musician</td>
+                                </tr>
+                                <tr>
+                                    <td>№ cases resolved / cases
+                                        <br> arbiter was picked</td>
+                                    <td>4/4</td>
+                                </tr>
+                                <tr>
+                                    <td>Last case resolved</td>
+                                    <td>4 months ago</td>
+                                </tr>
+                                <tr>
+                                    <td>Last Activity:</td>
+                                    <td>17 days ago</td>
+                                </tr>
+                                
+                            </table>
+
+                           
+                        </div>
+                        
+                        <button class="arbitier_item__button-info" id="1">View more</button>
+                    </div>
+
+                    <div class="arbiter_item">
+                        <div class="arbitier_item__personal">
+                            <div class="arbiter_item__foto">
+                                <img src="/arbstore/img/foto/Albert.svg" alt="Foto person" srcset="">
+                            </div>
+
+                            <table class="arbitier_item__personal_data">
+                                <tr>
+                                    <td>Name:</td>
+                                    <td>Albert Khayrullaev</td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                    <td>EJC4A7WQGHEZEKW6RLO7F26SAR4LAQBU</td>
+                                </tr>
+                                <tr>
+                                    <td>BIO:</td>
+                                    <td>Retired judge and musician</td>
+                                </tr>
+                                <tr>
+                                    <td>№ cases resolved / cases
+                                        <br> arbiter was picked</td>
+                                    <td>4/4</td>
+                                </tr>
+                                <tr>
+                                    <td>Last case resolved</td>
+                                    <td>4 months ago</td>
+                                </tr>
+                                <tr>
+                                    <td>Last Activity:</td>
+                                    <td>17 days ago</td>
+                                </tr>
+                                
+                            </table>
+
+                        </div>
+                        
+                        <button class="arbitier_item__button-info" id="2">View more</button>
+                    </div>
+                    
+                    <div class="arbiter_item">
+                        <div class="arbitier_item__personal">
+                            <div class="arbiter_item__foto">
+                                <img src="/arbstore/img/foto/Albert.svg" alt="Foto person" srcset="">
+                            </div>
+
+                            <table class="arbitier_item__personal_data">
+                                <tr>
+                                    <td>Name:</td>
+                                    <td>Albert Khayrullaev</td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                    <td>EJC4A7WQGHEZEKW6RLO7F26SAR4LAQBU</td>
+                                </tr>
+                                <tr>
+                                    <td>BIO:</td>
+                                    <td>Retired judge and musician</td>
+                                </tr>
+                                <tr>
+                                    <td>№ cases resolved / cases
+                                        <br> arbiter was picked</td>
+                                    <td>4/4</td>
+                                </tr>
+                                <tr>
+                                    <td>Last case resolved</td>
+                                    <td>4 months ago</td>
+                                </tr>
+                                <tr>
+                                    <td>Last Activity:</td>
+                                    <td>18 days ago</td>
+                                </tr>
+                                
+                            </table>
+
+                        </div>
+                        
+                        <button class="arbitier_item__button-info" id="3">View more</button>
+                    </div>
+
+                    <div class="arbiter_item">
+                        <div class="arbitier_item__personal">
+                            <div class="arbiter_item__foto">
+                                <img src="/arbstore/img/foto/Albert.svg" alt="Foto person" srcset="">
+                            </div>
+
+                            <table class="arbitier_item__personal_data">
+                                <tr>
+                                    <td>Name:</td>
+                                    <td>Albert Khayrullaev</td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                    <td>EJC4A7WQGHEZEKW6RLO7F26SAR4LAQBU</td>
+                                </tr>
+                                <tr>
+                                    <td>BIO:</td>
+                                    <td>Retired judge and musician</td>
+                                </tr>
+                                <tr>
+                                    <td>№ cases resolved / cases
+                                        <br> arbiter was picked</td>
+                                    <td>4/4</td>
+                                </tr>
+                                <tr>
+                                    <td>Last case resolved</td>
+                                    <td>4 months ago</td>
+                                </tr>
+                                <tr>
+                                    <td>Last Activity:</td>
+                                    <td>17 days ago</td>
+                                </tr>
+                                
+                            </table>
+
+                        </div>
+                        
+                        <button class="arbitier_item__button-info">View more</button>
+                    </div>
+
+                    <div class="arbiter_item">
+
+                    </div>
+
+                    <div class="arbiter_item">
+
+                    </div> -->
+                  
+                    
+                </div>
+                <div class="elipse-gause3"></div>
+            </section>
+
+            <footer class="footer">
+                <div class="social_items">
+                    <img src="/arbstore/img/Icons/etherscan.svg" alt="etherscan">
+                    <img src="/arbstore/img/Icons/Gihub.svg" alt="Gihub">
+                    <img src="/arbstore/img/Icons/Slack.svg" alt="Slack">
+                    <img src="/arbstore/img/Icons/Reddit.svg" alt="Reddit">
+                    <img src="/arbstore/img/Icons/Twitter.svg" alt="Twitter">
+                    <img src="/arbstore/img/Icons/Ghost Blog.svg" alt="Ghost Blog">
+                    <img src="/arbstore/img/Icons/Telegram.svg" alt="Telegram">
+                    <img src="/arbstore/img/Icons/Linkedin.svg" alt="Linkedin">
+                </div>
+            </footer>
+            
+            <!-- <div class="elipse_background">
+                <img src="/img/Ellipse.svg" alt="#">
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
