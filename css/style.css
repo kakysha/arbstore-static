@@ -201,7 +201,7 @@ a.active_page{
 
 .description_block {
     display: flex;
-    /* background: no-repeat right top url(/arbstore/img/back-img-aura.svg);
+    /* background: no-repeat right top url(arbstore/img/back-img-aura.svg);
     background-size: cover;
     margin: 0px 0px -60px 0px; */
     
@@ -240,8 +240,8 @@ a.active_page{
     left: -225px;*/
     margin: 0 auto; 
    
-    background: no-repeat right top url(/arbstore/img/back-img-aura.svg);
-                /* no-repeat center url(/arbstore/img/back-img.svg); */
+    background: no-repeat right top url(arbstore/img/back-img-aura.svg);
+                /* no-repeat center url(arbstore/img/back-img.svg); */
      
      top: -171px;
      left: -230px;
@@ -279,7 +279,7 @@ a.active_page{
 }
 
 .test{
-    /* background: no-repeat url(/arbstore/img/back-img-aura.svg);
+    /* background: no-repeat url(arbstore/img/back-img-aura.svg);
     width: 1000px;
     height: 800px;
     object-fit: cover;
@@ -842,7 +842,7 @@ table tr td:nth-child(2) {
     .parking_page{
         width: 100vw;
         height: 100vh;
-      background: no-repeat center url("/arbstore/img/parking1400.svg");
+      background: no-repeat center url("arbstore/img/parking1400.svg");
     }
 
     
@@ -986,7 +986,7 @@ table tr td:nth-child(2) {
 
     .parking_page{
            
-          background: no-repeat center url("/arbstore/img/parking960.svg");
+          background: no-repeat center url("arbstore/img/parking960.svg");
     }  
 }
 
@@ -1006,7 +1006,7 @@ table tr td:nth-child(2) {
         margin: 0 auto;
         /* max-width: 619px;
         max-height: 488px; */
-        /* background: no-repeat center url("/arbstore/img/backlogo640.png");   */
+        /* background: no-repeat center url("arbstore/img/backlogo640.png");   */
         /* margin: 0 auto;
         object-fit: cover; */
     }
@@ -1086,7 +1086,7 @@ table tr td:nth-child(2) {
 
     .parking_page{
            
-        background: no-repeat center url("/arbstore/img/parking640.svg");
+        background: no-repeat center url("arbstore/img/parking640.svg");
     } 
     
     .description_block__market img{
@@ -1100,14 +1100,14 @@ table tr td:nth-child(2) {
 @media (max-width:480px){
         .parking_page{
            
-          background: no-repeat center url("/arbstore/img/parking480.svg");
+          background: no-repeat center url("arbstore/img/parking480.svg");
         }  
 }
 
 @media (max-width:320px){
         .parking_page{
            
-          background: no-repeat center url("/arbstore/img/parking320.svg");
+          background: no-repeat center url("arbstore/img/parking320.svg");
         }  
 }
 
