@@ -122,12 +122,12 @@ function generatorTemlate(api_data, classInsertTemlate, classTemplate, ctxid=-1)
 
     for(var key in api_data){
         //  console.log(api_data[key]); 
-        console.log("for: "+ctxid);
+        // console.log("for: "+ctxid);
     if(ctxid != -1){key = ctxid;}
         // console.log(ctxid);
            
 
-    var html = renderTemplate(classTemplate, {
+    var html_obj ={
         real_name: api_data[key].real_name,
         address: api_data[key].address,
         bio: api_data[key].info.bio,
@@ -136,8 +136,40 @@ function generatorTemlate(api_data, classInsertTemlate, classTemplate, ctxid=-1)
         last_resolve_date: api_data[key].last_resolve_date,
         last_unit_date: api_data[key].last_unit_date,
         arbid: key,
-        img_src: api_data[key].address 
-    });  
+        img_src: api_data[key].address,
+        creation_date: fetch_api_data[key].creation_date
+
+    }    
+
+    if(ctxid != -1){
+
+        // добавление языка в объект
+        if (api_data[ctxid].info.languages.length>1){
+            html_obj.languages1 = api_data[ctxid].info.languages[0]
+            html_obj.languages2 = api_data[ctxid].info.languages[1]
+        }else{
+            html_obj.languages1 = html_obj.languages2 = api_data[ctxid].info.languages[0]
+        }
+          //end добавление языка в объект
+
+        //Добавление finance it
+
+        if(api_data[ctxid].info.tags.Finance && api_data[ctxid].info.tags.IT){
+            // console.log(fetch_api_data[this.id].info.tags.Finance);
+            html_obj.finance = api_data[ctxid].info.tags.Finance
+            html_obj.IT = api_data[ctxid].info.tags.IT
+        }else if(api_data[ctxid].info.tags.Finance) {
+            html_obj.finance = api_data[ctxid].info.tags.Finance
+            html_obj.IT = '-'
+        }else if(api_data[ctxid].info.tags.IT){
+            html_obj.IT = api_data[ctxid].info.tags.IT
+            html_obj.finance = '-'
+        }
+//  //end Добавление finance it     
+    }
+
+
+    var html = renderTemplate(classTemplate, html_obj);        
 
     $( classInsertTemlate ).append(html);
     if(ctxid != -1){break;}

@@ -1207,6 +1207,15 @@ table tr td:nth-child(2) {
         height: 400px;
         margin-left: 12px;
     }
+
+
+    .arbiter_item {
+        height: auto;
+    }
+
+    .arbitier_item__button-info{
+        margin: 22px 0px 10px 0px; 
+    }
 }
 
 
