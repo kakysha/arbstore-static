@@ -26,7 +26,7 @@ $('body').on('click','.popup_exit', function(){
 });
 
 
-if (window.location.pathname == '/arbiters.html') {
+// if (window.location.pathname == '/arbiters.html') {
     // console.log("pages arbiters");
     let url = 'https://testnet.arbstore.org/api/v1/'
     let fetch_api_data = '';
@@ -82,6 +82,10 @@ if (window.location.pathname == '/arbiters.html') {
     function showArbiters(it,finance){
         // console.log("it: "+it+"  finance: "+finance );
 
+
+        if (window.location.pathname == '/arbiters.html') {
+            console.log("arbiters");
+
         if(it && finance){
             generatorTemlate(fetch_api_data,".arbiter_items",'my-template')
             filtered_popup_data = fetch_api_data
@@ -96,7 +100,7 @@ if (window.location.pathname == '/arbiters.html') {
             filtered_popup_data = result_finance
         }
 
-
+        }
 
     }
 
@@ -180,7 +184,7 @@ if (window.location.pathname == '/arbiters.html') {
         generatorTemlate(filtered_popup_data,".overlay",'my-template-popup',this.id);
     });
 
-}//if arbbiters.html  end
+// }//if arbbiters.html  end
 
 
 $(document).ready(function(){
