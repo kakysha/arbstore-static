@@ -240,7 +240,7 @@ a.active_page{
     left: -225px;*/
     margin: 0 auto; 
    
-    background: no-repeat right top url(arbstore/img/back-img-aura.svg);
+    background: no-repeat right top url(img/back-img-aura.svg);
                 /* no-repeat center url(arbstore/img/back-img.svg); */
      
      top: -171px;
@@ -869,7 +869,7 @@ table tr td:nth-child(2) {
     .parking_page{
         width: 100vw;
         height: 100vh;
-      background: no-repeat center url("arbstore/img/parking1400.svg");
+      background: no-repeat center url("img/parking1400.svg");
     }
 
     
@@ -1013,7 +1013,7 @@ table tr td:nth-child(2) {
 
     .parking_page{
            
-          background: no-repeat center url("arbstore/img/parking960.svg");
+          background: no-repeat center url("img/parking960.svg");
     }  
 }
 
@@ -1113,7 +1113,7 @@ table tr td:nth-child(2) {
 
     .parking_page{
            
-        background: no-repeat center url("arbstore/img/parking640.svg");
+        background: no-repeat center url("img/parking640.svg");
     } 
     
     .description_block__market img{
