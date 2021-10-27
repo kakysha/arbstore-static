@@ -240,7 +240,7 @@ a.active_page{
     left: -225px;*/
     margin: 0 auto; 
    
-    background: no-repeat right top url("/img/back-img-aura.svg");
+    background: no-repeat right top url("img/back-img-aura.svg");
                 /* no-repeat center url(arbstore/img/back-img.svg); */
      
      top: -171px;
