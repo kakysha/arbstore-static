@@ -83,8 +83,9 @@ $('body').on('click','.popup_exit', function(){
         // console.log("it: "+it+"  finance: "+finance );
 
 
-        // if (window.location.pathname == '/arbiters.html') {
-            // console.log("arbiters");
+        if (window.location.pathname == '/arbiters.html') {
+            console.log("arbiters");
+        }
 
         if(it && finance){
             generatorTemlate(fetch_api_data,".arbiter_items",'my-template')
