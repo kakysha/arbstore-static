@@ -26,8 +26,18 @@ $('body').on('click','.popup_exit', function(){
 });
 
 
-// if (window.location.pathname == '/arbiters.html') {
+// $('body').on('click','.getApidata', function(){
+//     getApiData();
+//     console.log("api");
+// });
+
+if (window.location.pathname == '/arbiters.html') {
     // console.log("pages arbiters");
+    getApiData();
+}
+
+function getApiData (){
+   
     let url = 'https://testnet.arbstore.org/api/v1/'
     let fetch_api_data = '';
     fetch(url)
@@ -84,7 +94,7 @@ $('body').on('click','.popup_exit', function(){
 
 
         if (window.location.pathname == '/arbiters.html') {
-            console.log("arbiters");
+            // console.log("arbiters");
         }
 
         if(it && finance){
@@ -127,10 +137,10 @@ $('body').on('click','.popup_exit', function(){
             last_resolve_date: !!api_data[key].last_resolve_date ? api_data[key].last_resolve_date : " - ",
             last_unit_date: !!api_data[key].last_unit_date ? api_data[key].last_unit_date : " - ",
             arbid: key,
-            img_src: !!api_data[key].address ? api_data[key].address : " - ",
+            img_src: !!api_data[key].address ? api_data[key].address : "FotoNone",
             creation_date: !!api_data[key].creation_date ? api_data[key].creation_date : " - "
 
-        }    
+        }  
 
         if(ctxid != -1){
 
@@ -160,7 +170,7 @@ $('body').on('click','.popup_exit', function(){
         }
 
         var html = renderTemplate(classTemplate, html_obj);        
-        $( classInsertTemlate ).append(html);
+        $(classInsertTemlate).append(html);
         if(ctxid != -1){break;}
         }
     
@@ -185,14 +195,23 @@ $('body').on('click','.popup_exit', function(){
         generatorTemlate(filtered_popup_data,".overlay",'my-template-popup',this.id);
     });
 
-// }//if arbbiters.html  end
+}//if arbbiters.html  end
+
+// function ImageExist(url) 
+// {
+    
+//    var img = new Image();
+//    img.src = url;
+// //    console.log(img.height);
+//    return img.height != 0 ? true : false;
+// }
 
 
 $(document).ready(function(){
 
     $('.header__burger').click(function(event){
-        console.log('ok');
-        $('.header__burger, .header__menu, .adp_button').toggleClass('active');
+        // console.log('ok');
+        $('.header__burger, .header__menu, .adp_button, .header__body').toggleClass('active');
 
     });  
 }); 
@@ -200,15 +219,85 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-    $('.header__logo').click(function(event){
-        var url = "index.html";
-        $(location).attr('href',url);
+    // $('.header__logo').click(function(event){
+    //     var url = "index.html";
+    //     $(location).attr('href',url);
 
-        // console.log('ok');
-        // $('.header__burger, .header__menu, .adp_button').toggleClass('active');
+    //     // console.log('ok');
+    //     // $('.header__burger, .header__menu, .adp_button').toggleClass('active');
 
-    });  
+    // }); 
+
+    
 }); 
+
+
+
+
+
+if (window.location.pathname == '/formarbiter.html') {
+
+    $('.formspecialization_data input[type="checkbox"]').click(function(event){
+        //  console.log(event);
+        //  console.log("swdasd");
+        //  console.log($(this)[0].className);
+
+
+         if ($(this).is(':checked')){
+            //  console.log("on");
+             $('.'+$(this)[0].className+'_input').show(5);
+        } else {
+            $('.'+$(this)[0].className+'_input').hide(5);
+            // $('#text').hide(100);
+            // console.log("off");
+        }
+    
+        // if ($('#formspecializationit').is(':checked')){
+            
+        //     console.log('Включен');
+        // } else {
+        //     console.log('Выключен');
+        // }
+    });
+    
+    // console.log("pages arbiters");
+
+
+     //получаем инпут file в переменную
+    const formImage = document.getElementById('file_img_load');
+    //получаем див для превью в переменную
+    const formPreview = document.getElementById('formPreview');
+
+    //слушаем изменения в инпуте
+    formImage.addEventListener('change', () => {
+        uploadFile(formImage.files[0]);
+    });
+}
+
+
+
+function uploadFile(file){
+    if(!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)){
+        alert('Разрешены только изображения');
+        formImage.value='';
+        return;
+    }
+     if(file.size>2*1024*1024){
+        alert("Файл должен быть менее 2МБ");
+        return;
+    }
+
+    var reader = new FileReader();
+    reader.onload = function(e){
+        formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
+    };
+    reader.onerror = function(e){
+        alert('Ошибка');
+    };
+    reader.readAsDataURL(file);
+}
+
+
 // $(".arbitier_item__button-info").on("click",function() {
 //     // alert("click bound directly to #test-element");
 //     console.log(this.id);

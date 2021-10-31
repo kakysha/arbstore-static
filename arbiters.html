@@ -93,7 +93,7 @@
             <header class="header">
                 <div class="container">
                     <div class="header__body">
-                        <a href="#" class="header__logo">
+                        <a href="index.html" class="header__logo">
                             <img src="img/logo.svg" alt="">
                             <span>ArbStore</span>
                         </a>  
@@ -102,10 +102,12 @@
                         </div>
                         <nav class="header__menu" >
                             <ul class="header__list ">
+                                <li><a  class="header__link" target="blank" href="about.html">About</a></li>
                                 <li><a  class="header__link" target="blank" href="arbiters.html">List of Arbiters</a></li>
-                                <li><a class="header__link"  target="blank" href="userguide.html">User Guide</a></li>
+                                <li><a class="header__link"  target="blank" href="arbiterguide.html">User Guide</a></li>
                                 <li> <a class="header__link" target="blank" href="arbiterguide.html">Arbiters Guide</a></li>
-                                <li><a class="header__link" target="blank" href="#">Developer Docs</a></li>
+                                <li><a class="header__link"  target="blank" href="#">Get Gbytes</a></li>
+                                <li><a class="header__link"  target="blank" href="partners.html">For Partners</a></li>
                             </ul>
                             <button class="menu_item__button adp_button">Sign Up</button>
                         </nav>
@@ -124,11 +126,14 @@
                 </div>
                 <div class="arbiter_items">
                     <!-- temlate Arbiters -->
+                    
                     <script type="html" id="my-template" class="my-temlate">
                         <div  class="arbiter_item">
                             <div class="arbitier_item__personal">
                                 <div class="arbiter_item__foto">
-                                    <img src="img/foto/{img_src}.png" alt="Foto person">
+                                    <!-- <img src="img/foto/{img_src}.png" alt="Foto person"> -->
+
+                                    <img src="img/foto/{img_src}.png" onerror="if (this.src != 'img/foto/{img_src}.png') this.src = '/img/foto/FotoNone.png';">
                                 </div>
     
                                 <table class="arbitier_item__personal_data">

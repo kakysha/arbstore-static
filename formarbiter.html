@@ -18,7 +18,7 @@
             <header class="header">
                 <div class="container">
                     <div class="header__body">
-                        <a href="#" class="header__logo">
+                        <a href="index.html" class="header__logo">
                             <img src="img/logo.svg" alt="">
                             <span>ArbStore</span>
                         </a>  
@@ -27,10 +27,12 @@
                         </div>
                         <nav class="header__menu" >
                             <ul class="header__list ">
+                                <li><a  class="header__link" target="blank" href="about.html">About</a></li>
                                 <li><a  class="header__link" target="blank" href="arbiters.html">List of Arbiters</a></li>
-                                <li><a class="header__link"  target="blank" href="userguide.html">User Guide</a></li>
+                                <li><a class="header__link"  target="blank" href="arbiterguide.html">User Guide</a></li>
                                 <li> <a class="header__link" target="blank" href="arbiterguide.html">Arbiters Guide</a></li>
-                                <li><a class="header__link"  target="blank" href="#">Developer Docs</a></li>
+                                <li><a class="header__link"  target="blank" href="#">Get Gbytes</a></li>
+                                <li><a class="header__link"  target="blank" href="partners.html">For Partners</a></li>
                             </ul>
                             <button class="menu_item__button adp_button">Sign Up</button>
                         </nav>
@@ -43,12 +45,18 @@
                 <div class="elipse-gause"></div>
                 <div class="elipse-gause2"></div>
                 <div class="block-foto">
-                    <img src="/img/FotoNone.svg" alt="" srcset="">
-                    <p>Change profile image</p>
+                    <label for="file_img_load"id="formPreview" class="file_preview">
+                        <img src="img/FotoNone.svg" alt="" srcset="">
+                    </label> 
+                    <label  for="file_img_load">
+                        <p>Change profile image</p>
+                    </label>
+                    <!-- <div id="formPreview" class="file_preview"></div> -->
                 </div>
                     <div class="form_container">
                         <div class="form_data">
                             <form action="#" method="post">
+                                
                                 <div class="form_item">
                                     <label for="formvisible" class="form_label form_label__visible ">Visible</label>
 
@@ -80,28 +88,28 @@
 
                                     <div class="formspecialization_data">
                                         <div class="IT">
-                                            <input id="formspecializationit" type="checkbox" name="formspecializationit" class="form_input_req_formspecializationit">
+                                            <input id="formspecializationit" type="checkbox" name="formspecializationit" class="form_req_formspecializationit">
                                             <label for="formspecializationit">IT</label>
                                         </div>
-                                        <input id="formspecializationit" type="text" name="specializationit" class="form_input_req_specializationit visible_input"> 
+                                        <input id="formspecializationit" type="text" name="specializationit" class="form_req_formspecializationit_input visible_input"> 
 
                                         <div class="Insurance">
-                                            <input id="formspecializationInsurance" type="checkbox" name="formspecializationInsurance" class="form_input_req_formspecializationit">
+                                            <input id="formspecializationInsurance" type="checkbox" name="formspecializationInsurance" class="form_req_formspecializationInsurance">
                                             <label for="formspecializationInsurance">Insurance</label>
                                         </div>
-                                        <input id="formspecializationInsurance" type="text" name="specializationInsurance" class="form_input_req_specializationInsurance visible_input">
+                                        <input id="formspecializationInsurance" type="text" name="specializationInsurance" class="form_req_formspecializationInsurance_input visible_input">
                                         
                                         <div class="Finance">
-                                            <input id="formspecializationFinance" type="checkbox" name="formspecializationFinance" class="form_input_req_formspecializationit">
+                                            <input id="formspecializationFinance" type="checkbox" name="formspecializationFinance" class="form_req_formspecializationFinance">
                                             <label for="formspecializationFinance">Finance</label>
                                         </div>
-                                        <input id="formspecializationFinance" type="text" name="specializationFinance" class="form_input_req_specializationFinance visible_input">
+                                        <input id="formspecializationFinance" type="text" name="specializationFinance" class="form_req_formspecializationFinance_input visible_input">
 
                                         <div class="Realestate">
-                                            <input id="formspecializationRealestate" type="checkbox" name="formspecializationRealestate" class="form_input_req_formspecializationRealestate">
+                                            <input id="formspecializationRealestate" type="checkbox" name="formspecializationRealestate" class="form_req_formspecializationRealestate">
                                             <label for="formspecializationRealestate">Real estate</label>     
                                         </div>
-                                        <input id="formspecializationRealestate" type="text" name="specializationRealestate" class="form_input_req_specializationRealestate visible_input">   
+                                        <input id="formspecializationRealestate" type="text" name="specializationRealestate" class="form_req_formspecializationRealestate_input visible_input">   
                                                          
                                     </div>    
                                 </div>  
@@ -112,7 +120,8 @@
                                 </div>
                                 
                                 <button class="formsbutton_submit" type="submit">submit</button>
-
+                                
+                                <input id="file_img_load" accept=".png, .jpg" type="file" name="image" class="file_input">
                             </form>
                         </div>
                     </div>
