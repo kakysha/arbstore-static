@@ -31,11 +31,11 @@ $('body').on('click','.popup_exit', function(){
 //     console.log("api");
 // });
 
-if (window.location.pathname == '/arbiters.html') {
-    // console.log("pages arbiters");
-    getApiData();
-}
-
+// if (window.location.pathname == '/arbiters.html') {
+//     // console.log("pages arbiters");
+//     getApiData();
+// }
+getApiData();
 function getApiData (){
    
     let url = 'https://testnet.arbstore.org/api/v1/'
