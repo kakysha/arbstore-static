@@ -197,7 +197,6 @@ line-height: 25px;
 
 
 a.active_page{
-    
     color: #009AFF;
  }
 
@@ -816,7 +815,13 @@ table tr td:nth-child(2) {
         width: 903px;
         margin: 0 auto ;
     }
-
+    .file_preview img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+        
+    }
 
     #file_img_load{
         display: none;
@@ -906,6 +911,28 @@ table tr td:nth-child(2) {
         color: #FFFFFF;
         
     }
+
+    /* option{
+        font-size: 18px;
+        color: red;
+    }
+*/
+     .uk-margin{
+        /* color: black;
+        font-size: 18px;
+        position: relative;
+        top: 0;
+        left: 0; */
+        /* background-color: inherit; */
+    } 
+/**/
+    /* select{
+        background-color: inherit;
+    }  */
+    .select2-container{
+        /* width:200px ;  */
+    }
+    
 
     /* .form_input_req_specializationit{ */
         /* display: none; */
@@ -1005,8 +1032,14 @@ table tr td:nth-child(2) {
 
     .platform_table_block1, .platform_table_block2{
         display: flex;
+        /* flex: 1 1 40%; */
         flex-direction: column;
+        /* align-items: center; */
+        max-width: 499px;
+
     }
+    
+   
 
     .p2p_text{
         text-align: center;
@@ -1050,6 +1083,13 @@ table tr td:nth-child(2) {
         margin: 0px 0px 40px 0px;
        
     }
+    .partners_block2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+       
+    }
     .partners_block3{
         margin: 0px 0px 80px 0px;
        
@@ -1059,8 +1099,20 @@ table tr td:nth-child(2) {
         padding: 100px 0px 0px 0px;
         
     }
+
+
+    .platform_table_percentage{
+        display: flex
+        
+    }
+
+    .platform_table_percentage_value{
+        flex: 1 1 33.333%;
+    }
     
-    
+    .link_p2p{
+        color: #55ADFF;
+    }
 
     /* .formspecialization_data input[type="checkbox"]:checked{
         display: block;
@@ -2038,11 +2090,24 @@ table tr td:nth-child(2) {
 
   }
 
-  /* parnters.html */
+  /* partners.html */
   @media (max-width:640px){
     .content_partners {
         font-size: 18px;
         line-height: 25px;
     }
+    .platform_table_percentage{
+        flex-direction: column;
+    }
+    .platform_table_percentage_value{
+        margin: 50px 0px 0px 0px;
+    }
+
+    .platform_table_percentage_value img{
+        transform: scale(0.8);
+        margin: 0px 0px 20px 0px;
+    }
+
+
   }
   

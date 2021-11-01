@@ -29,7 +29,7 @@
                             <ul class="header__list ">
                                 <li><a  class="header__link" target="blank" href="about.html">About</a></li>
                                 <li><a  class="header__link" target="blank" href="arbiters.html">List of Arbiters</a></li>
-                                <li><a class="header__link"  target="blank" href="arbiterguide.html">User Guide</a></li>
+                                <li><a class="header__link"  target="blank" href="userguide.html">User Guide</a></li>
                                 <li> <a class="header__link" target="blank" href="arbiterguide.html">Arbiters Guide</a></li>
                                 <li><a class="header__link"  target="blank" href="#">Get Gbytes</a></li>
                                 <li><a class="header__link"  target="blank" href="partners.html">For Partners</a></li>
@@ -116,12 +116,387 @@
 
                                 <div class="form_item">
                                     <label for="formsphone" class="form_label">Languages that you speak</label>
-                                    <input id="formsphone" type="text" name="phone" placeholder="" class="form_input_req_phone">
+                                    <!-- <input id="formsphone" type="text" name="phone" placeholder="" class="form_input_req_phone"> -->
+
+                                    <div class="uk-margin" data-select2-id="2">
+                                        <label class="uk-form-label" for="form-horizontal-text">Languages that you speak</label>
+                                        <div class="uk-form-controls" data-select2-id="15">
+                                            <select class="languages select2-hidden-accessible" name="languages[]" multiple="" required="required" data-select2-id="15" tabindex="-1" aria-hidden="true" style="width: 100%">
+                                            
+                                                <option value="ab" data-select2-id="15">Abkhaz – аҧсуа</option>
+                                            
+                                                <option value="aa" data-select2-id="16">Afar – Afaraf</option>
+                                            
+                                                <option value="af" data-select2-id="17">Afrikaans – Afrikaans</option>
+                                            
+                                                <option value="ak" data-select2-id="18">Akan – Akan</option>
+                                            
+                                                <option value="sq" data-select2-id="19">Albanian – Shqip</option>
+                                            
+                                                <option value="am" data-select2-id="20">Amharic – አማርኛ</option>
+                                            
+                                                <option value="ar" data-select2-id="21">Arabic – العربية</option>
+                                            
+                                                <option value="an" data-select2-id="22">Aragonese – Aragonés</option>
+                                            
+                                                <option value="hy" data-select2-id="23">Armenian – Հայերեն</option>
+                                            
+                                                <option value="as" data-select2-id="24">Assamese – অসমীয়া</option>
+                                            
+                                                <option value="av" data-select2-id="25">Avaric – авар мацӀ, магӀарул мацӀ</option>
+                                            
+                                                <option value="ae" data-select2-id="26">Avestan – avesta</option>
+                                            
+                                                <option value="ay" data-select2-id="27">Aymara – aymar aru</option>
+                                            
+                                                <option value="az" data-select2-id="28">Azerbaijani – azərbaycan dili</option>
+                                            
+                                                <option value="bm" data-select2-id="29">Bambara – bamanankan</option>
+                                            
+                                                <option value="ba" data-select2-id="30">Bashkir – башҡорт теле</option>
+                                            
+                                                <option value="eu" data-select2-id="31">Basque – euskara, euskera</option>
+                                            
+                                                <option value="be" selected="" data-select2-id="3">Belarusian – Беларуская</option>
+                                            
+                                                <option value="bn" data-select2-id="32">Bengali – বাংলা</option>
+                                            
+                                                <option value="bh" data-select2-id="33">Bihari – भोजपुरी</option>
+                                            
+                                                <option value="bi" data-select2-id="34">Bislama – Bislama</option>
+                                            
+                                                <option value="bs" data-select2-id="35">Bosnian – bosanski jezik</option>
+                                            
+                                                <option value="br" data-select2-id="36">Breton – brezhoneg</option>
+                                            
+                                                <option value="bg" data-select2-id="37">Bulgarian – български език</option>
+                                            
+                                                <option value="my" data-select2-id="38">Burmese – ဗမာစာ</option>
+                                            
+                                                <option value="ca" data-select2-id="39">Catalan; Valencian – Català</option>
+                                            
+                                                <option value="ch" data-select2-id="40">Chamorro – Chamoru</option>
+                                            
+                                                <option value="ce" data-select2-id="41">Chechen – нохчийн мотт</option>
+                                            
+                                                <option value="ny" data-select2-id="42">Chichewa; Chewa; Nyanja – chiCheŵa, chinyanja</option>
+                                            
+                                                <option value="zh" data-select2-id="43">Chinese – 中文 (Zhōngwén), 汉语, 漢語</option>
+                                            
+                                                <option value="cv" data-select2-id="44">Chuvash – чӑваш чӗлхи</option>
+                                            
+                                                <option value="kw" data-select2-id="45">Cornish – Kernewek</option>
+                                            
+                                                <option value="co" data-select2-id="46">Corsican – corsu, lingua corsa</option>
+                                            
+                                                <option value="cr" data-select2-id="47">Cree – ᓀᐦᐃᔭᐍᐏᐣ</option>
+                                            
+                                                <option value="hr" data-select2-id="48">Croatian – hrvatski</option>
+                                            
+                                                <option value="cs" data-select2-id="49">Czech – česky, čeština</option>
+                                            
+                                                <option value="da" data-select2-id="50">Danish – dansk</option>
+                                            
+                                                <option value="dv" data-select2-id="51">Divehi; Dhivehi; Maldivian; – ދިވެހި</option>
+                                            
+                                                <option value="nl" data-select2-id="52">Dutch – Nederlands, Vlaams</option>
+                                            
+                                                <option value="en" selected="" data-select2-id="4">English – English</option>
+                                            
+                                                <option value="eo" data-select2-id="53">Esperanto – Esperanto</option>
+                                            
+                                                <option value="et" data-select2-id="54">Estonian – eesti, eesti keel</option>
+                                            
+                                                <option value="ee" data-select2-id="55">Ewe – Eʋegbe</option>
+                                            
+                                                <option value="fo" data-select2-id="56">Faroese – føroyskt</option>
+                                            
+                                                <option value="fj" data-select2-id="57">Fijian – vosa Vakaviti</option>
+                                            
+                                                <option value="fi" data-select2-id="58">Finnish – suomi, suomen kieli</option>
+                                            
+                                                <option value="fr" data-select2-id="59">French – français, langue française</option>
+                                            
+                                                <option value="ff" data-select2-id="60">Fula; Fulah; Pulaar; Pular – Fulfulde, Pulaar, Pular</option>
+                                            
+                                                <option value="gl" data-select2-id="61">Galician – Galego</option>
+                                            
+                                                <option value="ka" data-select2-id="62">Georgian – ქართული</option>
+                                            
+                                                <option value="de" data-select2-id="63">German – Deutsch</option>
+                                            
+                                                <option value="el" data-select2-id="64">Greek, Modern – Ελληνικά</option>
+                                            
+                                                <option value="gn" data-select2-id="65">Guaraní – Avañeẽ</option>
+                                            
+                                                <option value="gu" data-select2-id="66">Gujarati – ગુજરાતી</option>
+                                            
+                                                <option value="ht" data-select2-id="67">Haitian; Haitian Creole – Kreyòl ayisyen</option>
+                                            
+                                                <option value="ha" data-select2-id="68">Hausa – Hausa, هَوُسَ</option>
+                                            
+                                                <option value="he" data-select2-id="69">Hebrew (modern) – עברית</option>
+                                            
+                                                <option value="hz" data-select2-id="70">Herero – Otjiherero</option>
+                                            
+                                                <option value="hi" data-select2-id="71">Hindi – हिन्दी, हिंदी</option>
+                                            
+                                                <option value="ho" data-select2-id="72">Hiri Motu – Hiri Motu</option>
+                                            
+                                                <option value="hu" data-select2-id="73">Hungarian – Magyar</option>
+                                            
+                                                <option value="ia" data-select2-id="74">Interlingua – Interlingua</option>
+                                            
+                                                <option value="id" data-select2-id="75">Indonesian – Bahasa Indonesia</option>
+                                            
+                                                <option value="ie" data-select2-id="76">Interlingue – Originally called Occidental; then Interlingue after WWII</option>
+                                            
+                                                <option value="ga" data-select2-id="77">Irish – Gaeilge</option>
+                                            
+                                                <option value="ig" data-select2-id="78">Igbo – Asụsụ Igbo</option>
+                                            
+                                                <option value="ik" data-select2-id="79">Inupiaq – Iñupiaq, Iñupiatun</option>
+                                            
+                                                <option value="io" data-select2-id="80">Ido – Ido</option>
+                                            
+                                                <option value="is" data-select2-id="81">Icelandic – Íslenska</option>
+                                            
+                                                <option value="it" data-select2-id="82">Italian – Italiano</option>
+                                            
+                                                <option value="iu" data-select2-id="83">Inuktitut – ᐃᓄᒃᑎᑐᑦ</option>
+                                            
+                                                <option value="ja" data-select2-id="84">Japanese – 日本語 (にほんご／にっぽんご)</option>
+                                            
+                                                <option value="jv" data-select2-id="85">Javanese – basa Jawa</option>
+                                            
+                                                <option value="kl" data-select2-id="86">Kalaallisut, Greenlandic – kalaallisut, kalaallit oqaasii</option>
+                                            
+                                                <option value="kn" data-select2-id="87">Kannada – ಕನ್ನಡ</option>
+                                            
+                                                <option value="kr" data-select2-id="88">Kanuri – Kanuri</option>
+                                            
+                                                <option value="ks" data-select2-id="89">Kashmiri – कश्मीरी, كشميري‎</option>
+                                            
+                                                <option value="kk" data-select2-id="90">Kazakh – Қазақ тілі</option>
+                                            
+                                                <option value="km" data-select2-id="91">Khmer – ភាសាខ្មែរ</option>
+                                            
+                                                <option value="ki" data-select2-id="92">Kikuyu, Gikuyu – Gĩkũyũ</option>
+                                            
+                                                <option value="rw" data-select2-id="93">Kinyarwanda – Ikinyarwanda</option>
+                                            
+                                                <option value="ky" data-select2-id="94">Kirghiz, Kyrgyz – кыргыз тили</option>
+                                            
+                                                <option value="kv" data-select2-id="95">Komi – коми кыв</option>
+                                            
+                                                <option value="kg" data-select2-id="96">Kongo – KiKongo</option>
+                                            
+                                                <option value="ko" data-select2-id="97">Korean – 한국어 (韓國語), 조선말 (朝鮮語)</option>
+                                            
+                                                <option value="ku" data-select2-id="98">Kurdish – Kurdî, كوردی‎</option>
+                                            
+                                                <option value="kj" data-select2-id="99">Kwanyama, Kuanyama – Kuanyama</option>
+                                            
+                                                <option value="la" data-select2-id="100">Latin – latine, lingua latina</option>
+                                            
+                                                <option value="lb" data-select2-id="101">Luxembourgish, Letzeburgesch – Lëtzebuergesch</option>
+                                            
+                                                <option value="lg" data-select2-id="102">Luganda – Luganda</option>
+                                            
+                                                <option value="li" data-select2-id="103">Limburgish, Limburgan, Limburger – Limburgs</option>
+                                            
+                                                <option value="ln" data-select2-id="104">Lingala – Lingála</option>
+                                            
+                                                <option value="lo" data-select2-id="105">Lao – ພາສາລາວ</option>
+                                            
+                                                <option value="lt" data-select2-id="106">Lithuanian – lietuvių kalba</option>
+                                            
+                                                <option value="lu" data-select2-id="107">Luba-Katanga – </option>
+                                            
+                                                <option value="lv" data-select2-id="108">Latvian – latviešu valoda</option>
+                                            
+                                                <option value="gv" data-select2-id="109">Manx – Gaelg, Gailck</option>
+                                            
+                                                <option value="mk" data-select2-id="110">Macedonian – македонски јазик</option>
+                                            
+                                                <option value="mg" data-select2-id="111">Malagasy – Malagasy fiteny</option>
+                                            
+                                                <option value="ms" data-select2-id="112">Malay – bahasa Melayu, بهاس ملايو‎</option>
+                                            
+                                                <option value="ml" data-select2-id="113">Malayalam – മലയാളം</option>
+                                            
+                                                <option value="mt" data-select2-id="114">Maltese – Malti</option>
+                                            
+                                                <option value="mi" data-select2-id="115">Māori – te reo Māori</option>
+                                            
+                                                <option value="mr" data-select2-id="116">Marathi (Marāṭhī) – मराठी</option>
+                                            
+                                                <option value="mh" data-select2-id="117">Marshallese – Kajin M̧ajeļ</option>
+                                            
+                                                <option value="mn" data-select2-id="118">Mongolian – монгол</option>
+                                            
+                                                <option value="na" data-select2-id="119">Nauru – Ekakairũ Naoero</option>
+                                            
+                                                <option value="nv" data-select2-id="120">Navajo, Navaho – Diné bizaad, Dinékʼehǰí</option>
+                                            
+                                                <option value="nb" data-select2-id="121">Norwegian Bokmål – Norsk bokmål</option>
+                                            
+                                                <option value="nd" data-select2-id="122">North Ndebele – isiNdebele</option>
+                                            
+                                                <option value="ne" data-select2-id="123">Nepali – नेपाली</option>
+                                            
+                                                <option value="ng" data-select2-id="124">Ndonga – Owambo</option>
+                                            
+                                                <option value="nn" data-select2-id="125">Norwegian Nynorsk – Norsk nynorsk</option>
+                                            
+                                                <option value="no" data-select2-id="126">Norwegian – Norsk</option>
+                                            
+                                                <option value="ii" data-select2-id="127">Nuosu – ꆈꌠ꒿ Nuosuhxop</option>
+                                            
+                                                <option value="nr" data-select2-id="128">South Ndebele – isiNdebele</option>
+                                            
+                                                <option value="oc" data-select2-id="129">Occitan – Occitan</option>
+                                            
+                                                <option value="oj" data-select2-id="130">Ojibwe, Ojibwa – ᐊᓂᔑᓈᐯᒧᐎᓐ</option>
+                                            
+                                                <option value="cu" data-select2-id="131">Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic – ѩзыкъ словѣньскъ</option>
+                                            
+                                                <option value="om" data-select2-id="132">Oromo – Afaan Oromoo</option>
+                                            
+                                                <option value="or" data-select2-id="133">Oriya – ଓଡ଼ିଆ</option>
+                                            
+                                                <option value="os" data-select2-id="134">Ossetian, Ossetic – ирон æвзаг</option>
+                                            
+                                                <option value="pa" data-select2-id="135">Panjabi, Punjabi – ਪੰਜਾਬੀ, پنجابی‎</option>
+                                            
+                                                <option value="pi" data-select2-id="136">Pāli – पाऴि</option>
+                                            
+                                                <option value="fa" data-select2-id="137">Persian – فارسی</option>
+                                            
+                                                <option value="pl" data-select2-id="138">Polish – polski</option>
+                                            
+                                                <option value="ps" data-select2-id="139">Pashto, Pushto – پښتو</option>
+                                            
+                                                <option value="pt" data-select2-id="140">Portuguese – Português</option>
+                                            
+                                                <option value="qu" data-select2-id="141">Quechua – Runa Simi, Kichwa</option>
+                                            
+                                                <option value="rm" data-select2-id="142">Romansh – rumantsch grischun</option>
+                                            
+                                                <option value="rn" data-select2-id="143">Kirundi – kiRundi</option>
+                                            
+                                                <option value="ro" data-select2-id="144">Romanian, Moldavian, Moldovan – română</option>
+                                            
+                                                <option value="ru" data-select2-id="145">Russian – русский язык</option>
+                                            
+                                                <option value="sa" data-select2-id="146">Sanskrit (Saṁskṛta) – संस्कृतम्</option>
+                                            
+                                                <option value="sc" data-select2-id="147">Sardinian – sardu</option>
+                                            
+                                                <option value="sd" data-select2-id="148">Sindhi – सिन्धी, سنڌي، سندھی‎</option>
+                                            
+                                                <option value="se" data-select2-id="149">Northern Sami – Davvisámegiella</option>
+                                            
+                                                <option value="sm" data-select2-id="150">Samoan – gagana faa Samoa</option>
+                                            
+                                                <option value="sg" data-select2-id="151">Sango – yângâ tî sängö</option>
+                                            
+                                                <option value="sr" data-select2-id="152">Serbian – српски језик</option>
+                                            
+                                                <option value="gd" data-select2-id="153">Scottish Gaelic; Gaelic – Gàidhlig</option>
+                                            
+                                                <option value="sn" data-select2-id="154">Shona – chiShona</option>
+                                            
+                                                <option value="si" data-select2-id="155">Sinhala, Sinhalese – සිංහල</option>
+                                            
+                                                <option value="sk" data-select2-id="156">Slovak – slovenčina</option>
+                                            
+                                                <option value="sl" data-select2-id="157">Slovene – slovenščina</option>
+                                            
+                                                <option value="so" data-select2-id="158">Somali – Soomaaliga, af Soomaali</option>
+                                            
+                                                <option value="st" data-select2-id="159">Southern Sotho – Sesotho</option>
+                                            
+                                                <option value="es" data-select2-id="160">Spanish; Castilian – español, castellano</option>
+                                            
+                                                <option value="su" data-select2-id="161">Sundanese – Basa Sunda</option>
+                                            
+                                                <option value="sw" data-select2-id="162">Swahili – Kiswahili</option>
+                                            
+                                                <option value="ss" data-select2-id="163">Swati – SiSwati</option>
+                                            
+                                                <option value="sv" data-select2-id="164">Swedish – svenska</option>
+                                            
+                                                <option value="ta" data-select2-id="165">Tamil – தமிழ்</option>
+                                            
+                                                <option value="te" data-select2-id="166">Telugu – తెలుగు</option>
+                                            
+                                                <option value="tg" data-select2-id="167">Tajik – тоҷикӣ, toğikī, تاجیکی‎</option>
+                                            
+                                                <option value="th" data-select2-id="168">Thai – ไทย</option>
+                                            
+                                                <option value="ti" data-select2-id="169">Tigrinya – ትግርኛ</option>
+                                            
+                                                <option value="bo" data-select2-id="170">Tibetan Standard, Tibetan, Central – བོད་ཡིག</option>
+                                            
+                                                <option value="tk" data-select2-id="171">Turkmen – Türkmen, Түркмен</option>
+                                            
+                                                <option value="tl" data-select2-id="172">Tagalog – Wikang Tagalog, ᜏᜒᜃᜅ᜔ ᜆᜄᜎᜓᜄ᜔</option>
+                                            
+                                                <option value="tn" data-select2-id="173">Tswana – Setswana</option>
+                                            
+                                                <option value="to" data-select2-id="174">Tonga (Tonga Islands) – faka Tonga</option>
+                                            
+                                                <option value="tr" data-select2-id="175">Turkish – Türkçe</option>
+                                            
+                                                <option value="ts" data-select2-id="176">Tsonga – Xitsonga</option>
+                                            
+                                                <option value="tt" data-select2-id="177">Tatar – татарча, tatarça, تاتارچا‎</option>
+                                            
+                                                <option value="tw" data-select2-id="178">Twi – Twi</option>
+                                            
+                                                <option value="ty" data-select2-id="179">Tahitian – Reo Tahiti</option>
+                                            
+                                                <option value="ug" data-select2-id="180">Uighur, Uyghur – Uyƣurqə, ئۇيغۇرچە‎</option>
+                                            
+                                                <option value="uk" data-select2-id="181">Ukrainian – українська</option>
+                                            
+                                                <option value="ur" data-select2-id="182">Urdu – اردو</option>
+                                            
+                                                <option value="uz" data-select2-id="183">Uzbek – zbek, Ўзбек, أۇزبېك‎</option>
+                                            
+                                                <option value="ve" data-select2-id="184">Venda – Tshivenḓa</option>
+                                            
+                                                <option value="vi" data-select2-id="185">Vietnamese – Tiếng Việt</option>
+                                            
+                                                <option value="vo" data-select2-id="186">Volapük – Volapük</option>
+                                            
+                                                <option value="wa" data-select2-id="187">Walloon – Walon</option>
+                                            
+                                                <option value="cy" data-select2-id="188">Welsh – Cymraeg</option>
+                                            
+                                                <option value="wo" data-select2-id="189">Wolof – Wollof</option>
+                                            
+                                                <option value="fy" data-select2-id="190">Western Frisian – Frysk</option>
+                                            
+                                                <option value="xh" data-select2-id="191">Xhosa – isiXhosa</option>
+                                            
+                                                <option value="yi" data-select2-id="192">Yiddish – ייִדיש</option>
+                                            
+                                                <option value="yo" data-select2-id="193">Yoruba – Yorùbá</option>
+                                            
+                                                <option value="za" data-select2-id="194">Zhuang, Chuang – Saɯ cueŋƅ, Saw cuengh</option>
+                                            
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                                 <button class="formsbutton_submit" type="submit">submit</button>
                                 
                                 <input id="file_img_load" accept=".png, .jpg" type="file" name="image" class="file_input">
+
+                                
                             </form>
                         </div>
                     </div>
@@ -152,5 +527,10 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
+    <!-- Загрузить Select2  -->
+    <link rel="stylesheet" href="js/select2/css/select2.min.css">
+    <script src="js/select2/js/select2.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
 </body>
 </html>

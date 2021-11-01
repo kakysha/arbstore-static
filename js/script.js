@@ -322,3 +322,18 @@ function uploadFile(file){
 // $(".overlay").on("click",function(){
 //     console.log("overlay");
 // });
+
+
+
+$(document).ready(function() {
+	$('.languages').select2();
+    // $('.js-example-basic-multiple').select2();
+    // var selectory = $('.js-example-basic-multiple').select2({
+    //     // заполнитель: "Пожалуйста, выберите, выберите не более трех",
+    //    allowClear: true,
+    // //    maximumSelectionLength:3,
+    // });
+
+                              
+});
+
